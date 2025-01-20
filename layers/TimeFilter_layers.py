@@ -3,9 +3,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.distributions.normal import Normal
 
-
-ttt = 0
-
 class GCN(nn.Module):
     def __init__(self, dim, n_heads):
         super().__init__()
@@ -166,10 +163,6 @@ class mask_moe(nn.Module):
         gates, loss = self.noisy_top_k_gating(x, is_training)
         gates = gates.reshape(B, H, L, -1).float()
         # [B, H, L, 3]
-        # global ttt
-        # if is_training != True:
-        #     if ttt >= 9700:
-        #         torch.save(gates, f'./gate_list/gate_{ttt}.pth')
 
         if masks is None:
             print("Masks is None!")
@@ -213,11 +206,6 @@ class GraphLearner(nn.Module):
         adj = adj * mask_topk(adj, alpha)  # KNN
         mask, loss = self.mask_moe(adj, masks, is_training)
         adj = adj * mask
-        # global ttt
-        # if is_training != True:
-        #     if ttt >= 9700:
-        #         torch.save(adj, f'./adj/adj_{ttt}.pth')
-        #     ttt += 1
 
         return adj, loss  # [B, H, L, L]
 
@@ -235,10 +223,6 @@ class GraphFilter(nn.Module):
     def forward(self, x, masks=None, alpha=0.5, is_training=False):
         # x: [B, L, D]
         B, L, D = x.shape
-        global ttt
-        # if is_training != True:
-        #     if ttt >= 9700:
-        #         torch.save(x, f'./input/x_{ttt}.pth')
 
         adj, loss = self.graph_learner(x.reshape(B, L, self.n_heads, -1).permute(0, 2, 1, 3), masks, 
                                        alpha, is_training)  # [B, H, L, L]
