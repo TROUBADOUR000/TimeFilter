@@ -1,8 +1,5 @@
 # TimeFilter: Patch-Specific Spatial-Temporal Graph Filtration for Time Series Forecasting
 
-
-## 📰 News
-
 ## 🌟 Overview
 
 TimeFilter is a cutting-edge solution for time series forecasting, incorporating three main components: the **Spatial-Temporal Construction** Module, the **Patch-Specific Filtration** Module, and the **Adaptive Graph Learning** Module.
@@ -49,26 +46,3 @@ After training:
 - Your trained model will be safely stored in `./checkpoints`.
 - Numerical results in .npy format can be found in `./results`.
 - A comprehensive summary of quantitative metrics is accessible in `./result_long_term_forecast.txt`.
-
-## 📚 Citation
-If you find this repo useful, please consider citing our paper as follows:
-```
-@article{hu2024timefilter,
-  title={TimeFilter: Patch-Specific Spatial-Temporal Graph Filtration for Time Series Forecasting},
-  author={Hu, Yifan and Zhang, Guibin and Liu, Peiyuan and Lan, Disen and Li, Naiqi and Cheng, Dawei and Dai, Tao and Xia, Shu-Tao and Pan, Shirui},
-  journal={arXiv preprint arXiv:},
-  year={2025}
-}
-```
-
-## 🙏 Acknowledgement
-Special thanks to the following repositories for their invaluable code and datasets:
-
-- [PatchTST](https://github.com/yuqinie98/PatchTST)
-- [DUET](https://github.com/decisionintelligence/DUET)
-- [TimeSeriesCCM](https://github.com/Graph-and-Geometric-Learning/TimeSeriesCCM)
-- [Time-Series-Library](https://github.com/thuml/Time-Series-Library)
-- [iTransformer](https://github.com/thuml/iTransformer)
-
-## 📩 Contact
-If you have any questions, please contact [huyf0122@gmail.com](huyf0122@gmail.com) or submit an issue.
