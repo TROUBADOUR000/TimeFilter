@@ -56,7 +56,7 @@ If you find this repo useful, please consider citing our paper as follows:
 @article{hu2024timefilter,
   title={TimeFilter: Patch-Specific Spatial-Temporal Graph Filtration for Time Series Forecasting},
   author={Hu, Yifan and Zhang, Guibin and Liu, Peiyuan and Lan, Disen and Li, Naiqi and Cheng, Dawei and Dai, Tao and Xia, Shu-Tao and Pan, Shirui},
-  journal={arXiv preprint arXiv:},
+  journal={arXiv preprint arXiv:2501.13041},
   year={2025}
 }
 ```
