@@ -3,6 +3,8 @@
 
 ## 📰 News
 
+🚩 Updates (2025-1-22) Initial upload to arXiv [PDF].
+
 ## 🌟 Overview
 
 TimeFilter is a cutting-edge solution for time series forecasting, incorporating three main components: the **Spatial-Temporal Construction** Module, the **Patch-Specific Filtration** Module, and the **Adaptive Graph Learning** Module.
