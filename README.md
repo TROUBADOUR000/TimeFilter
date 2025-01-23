@@ -3,7 +3,7 @@
 
 ## 📰 News
 
-🚩 Updates (2025-1-22) Initial upload to arXiv [PDF].
+🚩 Updates (2025-1-22) Initial upload to arXiv [PDF](https://arxiv.org/pdf/2501.13041).
 
 ## 🌟 Overview
 
