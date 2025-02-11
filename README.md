@@ -54,7 +54,7 @@ After training:
 
 ## 📚 Citation
 If you find this repo useful, please consider citing our paper as follows:
-```
+```bibtex
 @article{hu2025timefilter,
   title={TimeFilter: Patch-Specific Spatial-Temporal Graph Filtration for Time Series Forecasting},
   author={Hu, Yifan and Zhang, Guibin and Liu, Peiyuan and Lan, Disen and Li, Naiqi and Cheng, Dawei and Dai, Tao and Xia, Shu-Tao and Pan, Shirui},
